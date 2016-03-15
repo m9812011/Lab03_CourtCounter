@@ -7,8 +7,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView scoreView;
+    private TextView scoreViewA,scoreViewB ;
     private int scoreTeamA = 0;
+    private int scoreTeamB = 0;
 
 
     @Override
@@ -21,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void findViews(){
-        scoreView = (TextView)findViewById(R.id.team_a_score);
+        scoreViewA = (TextView)findViewById(R.id.team_a_score);
+        scoreViewB = (TextView)findViewById(R.id.team_b_score);
     }
 
     public void addForTeamA(View view) {
@@ -35,16 +37,34 @@ public class MainActivity extends AppCompatActivity {
             case R.id.add1ForTeamA:
                 scoreTeamA += 1;
                 break;
-        }
-        scoreView.setText(String.valueOf(scoreTeamA));
+            }
+        scoreViewA.setText(String.valueOf(scoreTeamA));
 
     }
 
 
+    public void addForTeamB(View view) {
+        switch (view.getId()){
+            case R.id.add3ForTeamB:
+                scoreTeamB += 3;
+                break;
+            case R.id.add2ForTeamB:
+                scoreTeamB += 2;
+                break;
+            case R.id.add1ForTeamB:
+                scoreTeamB += 1;
+                break;
+        }
+        scoreViewB.setText(String.valueOf(scoreTeamB));
+
+    }
+
     public void resetScoreView(View view) {
         if(view.getId() == R.id.reset){
             scoreTeamA = 0;
-            scoreView.setText(String.valueOf(scoreTeamA));
+            scoreTeamB = 0;
+            scoreViewA.setText(String.valueOf(scoreTeamA));
+            scoreViewB.setText(String.valueOf(scoreTeamB));
         }
     }
 

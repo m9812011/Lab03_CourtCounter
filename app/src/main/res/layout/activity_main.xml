@@ -45,7 +45,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:background="@android:color/holo_blue_light"
                 android:onClick="addForTeamA"
                 android:text="+3 分球"
                 android:textColor="@android:color/white"
@@ -56,7 +55,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:background="@android:color/holo_blue_light"
                 android:onClick="addForTeamA"
                 android:text="+2 分球"
                 android:textColor="@android:color/white"
@@ -67,18 +65,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:background="@android:color/holo_blue_light"
                 android:onClick="addForTeamA"
                 android:text="罰球"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"/>
         </LinearLayout>
 
-        <TextView
-            android:layout_width="3dp"
+        <View
+            android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
             android:background="@android:color/darker_gray"/>
         <LinearLayout
             android:layout_width="0dp"
@@ -107,7 +104,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:background="@android:color/holo_blue_light"
                 android:onClick="addForTeamB"
                 android:text="+3 分球"
                 android:textColor="@android:color/white"
@@ -118,7 +114,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:background="@android:color/holo_blue_light"
                 android:onClick="addForTeamB"
                 android:text="+2 分球"
                 android:textColor="@android:color/white"
@@ -129,7 +124,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:background="@android:color/holo_blue_light"
                 android:onClick="addForTeamB"
                 android:text="罰球"
                 android:textColor="@android:color/white"
@@ -144,10 +138,10 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
-        android:background="@android:color/holo_blue_light"
         android:onClick="resetScoreView"
         android:text="重置"
         android:textColor="@android:color/white"
+        android:background="#FF4081"
         android:textSize="24sp"/>
 
 

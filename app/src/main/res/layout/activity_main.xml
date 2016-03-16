@@ -24,27 +24,26 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/team_a_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                android:gravity="center"
-                android:text="0"
-                android:textSize="56sp"/>
-
-
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/hornets"/>
 
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="56sp"/>
+
             <Button
                 android:id="@+id/add3ForTeamA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:background="@android:color/holo_blue_dark"
                 android:onClick="addForTeamA"
                 android:text="+3 分球"
                 android:textColor="@android:color/white"
@@ -55,6 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:background="@android:color/holo_blue_dark"
                 android:onClick="addForTeamA"
                 android:text="+2 分球"
                 android:textColor="@android:color/white"
@@ -65,6 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:background="@android:color/holo_blue_dark"
                 android:onClick="addForTeamA"
                 android:text="罰球"
                 android:textColor="@android:color/white"
@@ -84,6 +85,12 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/houston_rockets"/>
+
             <TextView
                 android:id="@+id/team_b_score"
                 android:layout_width="match_parent"
@@ -92,18 +99,12 @@
                 android:text="0"
                 android:textSize="56sp"/>
 
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/houston_rockets"/>
-
             <Button
                 android:id="@+id/add3ForTeamB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:background="@android:color/holo_red_dark"
                 android:onClick="addForTeamB"
                 android:text="+3 分球"
                 android:textColor="@android:color/white"
@@ -114,6 +115,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:background="@android:color/holo_red_dark"
                 android:onClick="addForTeamB"
                 android:text="+2 分球"
                 android:textColor="@android:color/white"
@@ -124,6 +126,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:background="@android:color/holo_red_dark"
                 android:onClick="addForTeamB"
                 android:text="罰球"
                 android:textColor="@android:color/white"
@@ -135,15 +138,31 @@
         android:id="@+id/reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
+        android:background="@android:color/holo_orange_dark"
         android:onClick="resetScoreView"
         android:text="重置"
         android:textColor="@android:color/white"
-        android:background="#FF4081"
-        android:textSize="24sp"/>
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完賽"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:background="@android:color/holo_green_dark"
+        android:id="@+id/dataAnalysis"
+        android:onClick="dataAnalysis"
+        android:layout_alignTop="@+id/reset"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="59dp"
+        android:layout_marginEnd="59dp" />
 
 
 </RelativeLayout>

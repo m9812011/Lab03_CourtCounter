@@ -25,15 +25,15 @@ public class MainActivity2 extends AppCompatActivity {
 
 
     private void findViews(){
-        threePointForA = (TextView)findViewById(R.id.add3ForTeamA_text);
-        twoPointForA = (TextView)findViewById(R.id.add2ForTeamA_text);
-        onePointForA = (TextView)findViewById(R.id.add1ForTeamA_text);
+//        threePointForA = (TextView)findViewById(R.id.add3ForTeamA_text);
+//        twoPointForA = (TextView)findViewById(R.id.add2ForTeamA_text);
+//        onePointForA = (TextView)findViewById(R.id.add1ForTeamA_text);
         threePointForB = (TextView)findViewById(R.id.add3ForTeamB_text);
         twoPointForB = (TextView)findViewById(R.id.add2ForTeamB_text);
         onePointForB = (TextView)findViewById(R.id.add1ForTeamB_text);
-        scoreA = (TextView)findViewById(R.id.scoreA);
+//        scoreA = (TextView)findViewById(R.id.scoreA);
         scoreB = (TextView)findViewById(R.id.scoreB);
-        lauout1 = (LinearLayout)findViewById(R.id.titleA);
+//        lauout1 = (LinearLayout)findViewById(R.id.titleA);
         lauout2 = (LinearLayout)findViewById(R.id.titleB);
     }
 
